@@ -1,0 +1,54 @@
+<div class="limiter" style="background-image: url(assets/ocean2.jpg); background-repeat: no-repeat; background-size: cover;">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(../assets/mountains2.jpg);">
+					<span class="login100-form-title-1">
+						Sign Up
+					</span>
+				</div>
+
+				<form class="login100-form" (submit)="onSubmit($event)">
+					<div class="wrap-input100 m-b-26">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="username" id="username" placeholder="Enter username" ng-required="true" />
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 m-b-18">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" id="password" name="pass" placeholder="Enter password" ng-required="true">
+						<span class="focus-input100"></span>
+					</div>
+
+          			<div class="wrap-input100 m-b-18">
+						<span class="label-input100">Retype Password</span>
+						<input class="input100" type="password" name="pass1" placeholder="Retype password" ng-required="true">
+						<span class="focus-input100"></span>
+					</div>
+
+          			<div class="wrap-input100 m-b-18">
+						<span class="label-input100">Email</span>
+						<input class="input100" type="email" name="email" id="email" placeholder="Enter Email" ng-required="true">
+						<span class="focus-input100"></span>
+					</div>
+
+          			<div class="wrap-input100 m-b-18">
+						<span class="label-input100">Phone</span>
+						<input class="input100" type="number" name="phone_no" id="phone_no" placeholder="Enter Phone Number" ng-required="true">
+						<span class="focus-input100"></span>
+					</div>
+
+          			<br>
+          			<br>
+          			<br>
+					<div class="container-login100-form-btn">
+						<!--<input id="l2" type="submit" name="sup" value="Sign Up" style="background-color:green;opacity:1.0;font-weight:bold;font-size:15px;" /><br>-->
+            			<button class="login100-form-btn" type="submit" id="button1" name="submit" style="margin-top: 20px;">
+							Sign Up
+						</button>
+					</div>
+					<h3>{{msg}}</h3>
+				</form>
+			</div>
+		</div>
+	</div>

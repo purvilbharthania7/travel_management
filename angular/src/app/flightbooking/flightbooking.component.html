@@ -1,0 +1,79 @@
+<div class="container">
+    <br>
+    <br>
+    
+    <div class="row" style="border-style: inset">
+      <div class="col-lg-4">
+        <img class="card-img-top" [src]="p.imageurl[0]" alt="Card image" style="width:100%; height:200px">
+      </div>
+      <div class="col-lg-8" style="padding:20px">
+        <div class="row">
+          <div class="col-lg-8">
+            <h3><span style="margin-right:30px">FROM:{{p.from}}</span><span style="margin-left:50px">TO:{{p.to}}</span></h3>
+          </div>
+          <div class="col-lg-4">
+            <a routerLink="/flight" class="btn btn-danger" style="float:right">CHANGE FLIGHT</a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-8">
+            <h4><span style="margin-right:30px">DESPARTURE:<span style="color:red">{{p.desparture}}</span></span><span style="margin-left:50px">RETURN:<span style="color:red">{{p.return}}</span></span></h4>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-8">
+            <h4><p class="card-text" style="color:red"><b>{{ p.price | currency:'INR':true }}</b></p></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+    <div class="background-white border border-grey-1 padding-30px margin-tb-30px">
+                            <h3 class="text-uppercase text-medium font-weight-700 border-bottom-1 border-second-color  padding-bottom-8px">Product Billing Detais</h3>
+                            <div class="padding-top-10px">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputName">Full Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Last Name </label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputName">Email </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Mobile  </label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputName">Country  </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">City   </label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Address</label>
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                    <a routerLink="/home" class="btn btn-info" style="margin-right:10px">GO HOME</a>
+                                    <a routerLink="/flightthankyou" class="btn btn-primary">CONFIRM BOOKING</a>
+                                </form>
+                            </div>
+                        </div>
+    
+    
+    </div>

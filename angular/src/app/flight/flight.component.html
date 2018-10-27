@@ -1,0 +1,67 @@
+<div class="container">
+
+    <br>
+                <h4 class="widget-title clearfix" style="color:#1db8c1"><span>FLIGHT SEARCH</span></h4>
+                <br>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <label>FROM</label>
+                                    <div class="destination">
+                    <input type="text" class="w3-input w3-border" placeholder="Enter Destination"></div>
+                  </div>
+                  <div class="col-sm-2">
+                    <label>TO</label>
+                                    <div class="destination">
+                    <input type="text" class="w3-input w3-border" placeholder="Enter Destination"></div>
+                  </div>
+                  <div class="col-sm-2">
+                    <label>DEPART</label>
+                                    <div class="date-input"><input type="text" class="w3-input w3-border" placeholder="15 / 5 / 2017" id="dp1511378113210"></div>
+                  </div>
+                  <div class="col-sm-2">
+                    <label>RETURN</label>
+                                    <div class="date-input"><input type="text" class="w3-input w3-border" placeholder="15 / 5 / 2017" id="dp1511378113210"></div>
+                  </div>
+                  <div class="col-sm-2">
+                    <label>PASSANGERS</label>
+                                    <div class="rooms"><input type="text" class="w3-input w3-border" placeholder="1"></div>
+                  </div>
+                  <div class="col-sm-2">
+                    <br>
+                    <a routerLink="#" class="btn btn-primary">SEARCH</a>
+                  </div>
+                </div>       
+<br>
+<br>
+<ng-container *ngFor="let p of prods">
+<div *ngIf="p.category=='FLIGHT'" class="row" style="border-style: inset">
+	<div class="col-lg-4">
+		<img class="card-img-top" [src]="p.imageurl[0]" alt="Card image" style="width:200px">
+	</div>
+	<div class="col-lg-8" style="padding:20px">
+		<div class="row">
+			<div class="col-lg-8">
+				<h3><span style="margin-right:30px">FROM:{{ p.from }}</span><span style="margin-left:50px">TO:{{ p.to }}</span></h3>
+			</div>
+			<div class="col-lg-4">
+				<a *ngIf="p.available>0" routerLink="/flightbooking/{{p.id}}" class="btn btn-primary" style="float:right">BOOK NOW</a>
+				<a *ngIf="p.available==0" routerLink="/flightbooking" class="btn btn-danger" [class.disabled]="p.available==0" style="float:right">BOOK NOW</a>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h5><span style="margin-right:30px">DESPARTURE:<span style="color:red">{{ p.desparture }}</span></span><span style="margin-left:50px">RETURN:<span style="color:red">{{ p.return }}</span></span></h5>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h4><p style="color:red"><b>{{ p.price | currency:'INR':true }}</b></p></h4>
+			</div>
+		</div>
+	</div>
+</div>
+<div *ngIf="p.category=='FLIGHT'" class="w-100" ><br></div>
+</ng-container>
+</div>

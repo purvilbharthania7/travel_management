@@ -1,0 +1,10 @@
+export const userinfo=[{id: 1, name: "john", age: 25, url: "../../../assets/images/punjabi-wedding-couple-pictures.jpg" , inf:"1" } ,
+{id: 2, name: "john1", age: 22,  url: "../../../assets/images/22.jpg", inf:"2" },
+{id: 3, name: "john1", age: 22,  url: "../../../assets/images/22.jpg", inf:"3" },
+{id: 4, name: "john1", age: 22,  url: "../../../assets/images/22.jpg", inf:"4" },
+{id: 5, name: "john1", age: 22,  url: "../../../assets/images/22.jpg", inf:"5" },
+{id: 6, name: "john1", age: 22,  url: "../../../assets/images/22.jpg", inf:"6" },
+{id: 7, name: "john", age: 25, url: "../../../assets/images/punjabi-wedding-couple-pictures.jpg" , inf:"7"  },
+{id: 8, name: "john", age: 25, url: "../../../assets/images/punjabi-wedding-couple-pictures.jpg" , inf:"8"  },
+{id: 9, name: "john", age: 25, url: "../../../assets/images/punjabi-wedding-couple-pictures.jpg" , inf:"9"  },
+{id: 10, name: "john", age: 25, url: "../../../assets/images/punjabi-wedding-couple-pictures.jpg" , inf:"10"  }]
